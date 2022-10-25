@@ -25,10 +25,13 @@
   height: 100px;
 }
 
-#filterPanel {
+.filterPanel {
   background-color: rgb(255, 151, 5);
   width: 400px;
   height: fit-content;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 .filterSubtitle {
@@ -44,4 +47,9 @@
 .input2 {
   height: 15px;
   width: 75px;
+}
+
+.sliderPack {
+  margin-left: 30px;
+  margin-right: 30px;
 }

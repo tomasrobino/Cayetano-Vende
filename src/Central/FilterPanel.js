@@ -1,13 +1,13 @@
-import DefaultSlider from "./DefaultSlider.tsx";
+import DoubleSlider from "./DoubleSlider.tsx";
 
 function FilterPanel() {
     return (
-        <div id="filterPanel">
+        <div className="filterPanel">
             <h1>Filtros</h1>
-            <h4 className="filterSubtitle">Precio</h4>
-            <DefaultSlider
-                
-            />
+            <div className="sliderPack">
+                <h4 className="filterSubtitle">Precio</h4>
+                <DoubleSlider/>
+            </div>
         </div>
     )
 }
