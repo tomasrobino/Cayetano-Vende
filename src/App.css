@@ -5,7 +5,7 @@
 }
 
 #header {
-  background-color: red;
+  background-color: rgb(255, 151, 5);
   margin: 0%;
   padding: 0%;
   width: 100%;
@@ -26,7 +26,22 @@
 }
 
 #filterPanel {
-  background-color: red;
+  background-color: rgb(255, 151, 5);
   width: 400px;
   height: fit-content;
+}
+
+.filterSubtitle {
+  text-align: "left";
+  margin: 30
+}
+
+.input1 {
+  height: 15px;
+  width: 75px;
+}
+
+.input2 {
+  height: 15px;
+  width: 75px;
 }
