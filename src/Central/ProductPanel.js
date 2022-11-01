@@ -1,30 +1,18 @@
-function ProductPanel() {
+import productDatabase from "./productDatabase";
+
+function ProductPanel(props) {
+    let divArr=[];
+    for(let i in productDatabase) {
+        if (productDatabase[i].price >= props.priceFilter[0] && productDatabase[i].price <= props.priceFilter[1]) {
+            divArr.push(<div className="div">
+                ${productDatabase[i].price}
+            </div>);
+        }
+    }
+
     return (
         <div id="productPanel">
-            <div className="div">
-                <h3>$400</h3>
-            </div>
-            <div className="div">
-                <h3>$800</h3>
-            </div>
-            <div className="div">
-                <h3>$1000</h3>
-            </div>
-            <div className="div">
-                <h3>$2000</h3>
-            </div>
-            <div className="div">
-                <h3>$4000</h3>
-            </div>
-            <div className="div">
-                <h3>$4000</h3>
-            </div>
-            <div className="div">
-                <h3>$2000</h3>
-            </div>
-            <div className="div">
-                <h3>$800</h3>
-            </div>
+            {divArr}
         </div>
     )
 }
