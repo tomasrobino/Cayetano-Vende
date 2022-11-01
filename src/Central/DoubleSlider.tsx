@@ -1,24 +1,22 @@
-import { useState } from "react";
 import { Slider } from "@mui/material";
 import React from "react";
 
 function DefaultSlider(props) {
-    const [value, setValue] = useState([0, 5000]);
     
-    const handleSliderChange = (event: Event, newValue: number | number[]) => {
-        if (value[0]>value[1]) {
-            const a=value[1];
-            value[1]=value[0];
-            value[0]=a;
+    
+    const handleSliderChange = (event: Event, newPriceFilter: number | number[]) => {
+        if (props.priceFilter[0]>props.priceFilter[1]) {
+            const a=props.priceFilter[1];
+            props.priceFilter[1]=props.priceFilter[0];
+            props.priceFilter[0]=a;
         }
-        setValue(newValue as number[]);
-        
+        props.setPriceFilter(newPriceFilter as number[]);
     };
     
     return(
         <>
             <Slider
-                value={value}
+                value={props.priceFilter}
                 onChange={handleSliderChange}
                 valueLabelDisplay="auto"
                 min={0}
@@ -26,10 +24,10 @@ function DefaultSlider(props) {
             />
             <div style={{display: "flex", justifyContent: "space-between"}}>
                 <h5 className="sliderDisplay">
-                    ${value[0]}
+                    ${props.priceFilter[0]}
                 </h5>
                 <h5 className="sliderDisplay">
-                    ${value[1]}
+                    ${props.priceFilter[1]}
                 </h5>
             </div>
         </>
