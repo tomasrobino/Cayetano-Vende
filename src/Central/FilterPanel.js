@@ -1,3 +1,4 @@
+import CategoriesFilter from "./CategoriesFilter.tsx";
 import DoubleSlider from "./DoubleSlider.tsx";
 
 function FilterPanel(props) {
@@ -8,6 +9,7 @@ function FilterPanel(props) {
                 <h4 className="filterSubtitle">Precio</h4>
                 <DoubleSlider priceFilter={props.priceFilter} setPriceFilter={props.setPriceFilter}/>
             </div>
+            <CategoriesFilter category={props.category} setCategory={props.setCategory}/>
         </div>
     )
 }

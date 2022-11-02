@@ -6,7 +6,7 @@ function DefaultSlider(props) {
     
     const handleSliderChange = (event: Event, newPriceFilter: number | number[]) => {
         if (props.priceFilter[0]>props.priceFilter[1]) {
-            const a=props.priceFilter[1];
+            let a=props.priceFilter[1];
             props.priceFilter[1]=props.priceFilter[0];
             props.priceFilter[0]=a;
         }
