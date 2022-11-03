@@ -15,8 +15,8 @@ function CategoriesFilter(props) {
                     <label>Categoría 1</label>
                 </div>
                 <div>
-                    <input type="radio" name="categories" value="2" onChange={handleChange}/>
-                    <label>Categoría 2</label>
+                    <input type="radio" name="categories" value="boardgames" onChange={handleChange}/>
+                    <label>Juegos de Mesa</label>
                 </div>
                 <div>
                     <input type="radio" name="categories" value="3" onChange={handleChange}/>

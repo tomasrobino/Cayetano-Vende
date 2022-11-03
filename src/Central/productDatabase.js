@@ -1,8 +1,11 @@
 export default {
     a : {
-        productName: "first",
+        productName: "Ajedrez",
         price: 400,
-        category: "1"
+        category: "boardgames",
+        mainImg: "IMG_20210108_183856917.jpg",
+        allImgs: ""
+
     },
 
     b : {
