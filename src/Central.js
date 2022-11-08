@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import FilterPanel from "./Central/FilterPanel"
-import ProductPanel from "./Central/ProductPanel"
+import ProductPanel from "./Central/ProductPanel.js"
 
 function Central() {
     const [priceFilter, setPriceFilter] = useState([0, 5000]);

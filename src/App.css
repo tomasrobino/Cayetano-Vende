@@ -67,3 +67,8 @@
   height: 400px;
   width: 300px;
 }
+
+.image {
+  width: inherit;
+  height: inherit;
+}

@@ -1,52 +1,37 @@
+import ajedrezMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/main.jpg";
+import ajedrez1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/1.jpg";
+import ajedrez2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/2.jpg";
+import ajedrez3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/3.jpg";
+
+
 export default {
-    a : {
+    ajedrez : {
+        folder: "ajedrez",
         productName: "Ajedrez",
         price: 400,
         category: "boardgames",
-        mainImg: "IMG_20210108_183856917.jpg",
-        allImgs: ""
-
+        imgs: {
+            main: ajedrez1,
+        }
     },
 
     b : {
+        folder: "b",
         productName: "second",
         price: 800,
-        category: "4"
+        category: "4",
+        imgs: {
+            main: ajedrezMain,
+        }
     },
 
     c : {
+        folder: "c",
         productName: "third",
         price: 1000,
-        category: "3"
-    },
-
-    d : {
-        productName: "fourth",
-        price: 2000,
-        category: "2"
-    },
-
-    e : {
-        productName: "fifth",
-        price: 4000,
-        category: "2"
-    },
-
-    f : {
-        productName: "sixth",
-        price: 4000,
-        category: "3"
-    },
-
-    g : {
-        productName: "seventh",
-        price: 2000,
-        category: "5"
-    },
-
-    h : {
-        productName: "eigth",
-        price: 800,
-        category: "5"
+        category: "3",
+        imgs: {
+            main: ajedrez2,
+        }
     }
 }
