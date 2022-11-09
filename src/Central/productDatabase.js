@@ -3,35 +3,75 @@ import ajedrez1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs
 import ajedrez2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/2.jpg";
 import ajedrez3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/3.jpg";
 
+import powerRangersMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/main.jpg";
+import powerRangers1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/1.jpg";
+import powerRangers2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/2.jpg";
+import powerRangers3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/3.jpg";
+import powerRangers4 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/4.jpg";
+
+import backgammonMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/main.jpg";
+import backgammon1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/1.jpg";
+import backgammon2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/2.jpg";
+import backgammon3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/3.jpg";
+import backgammon4 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/4.jpg";
+
+import bolonkiMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/main.jpg";
+import bolonki1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/1.jpg";
+import bolonki2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/2.jpg";
+import bolonki3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/3.jpg";
 
 export default {
-    ajedrez : {
+    ajedrez: {
         folder: "ajedrez",
         productName: "Ajedrez",
         price: 400,
         category: "boardgames",
         imgs: {
-            main: ajedrez1,
-        }
-    },
-
-    b : {
-        folder: "b",
-        productName: "second",
-        price: 800,
-        category: "4",
-        imgs: {
             main: ajedrezMain,
+            one: ajedrez1,
+            two: ajedrez2,
+            three: ajedrez3
         }
     },
 
-    c : {
-        folder: "c",
-        productName: "third",
-        price: 1000,
-        category: "3",
+    powerRangers: {
+        folder: "4 en linea power rangers",
+        productName: "4 En Linea: Power Rangers",
+        price: 800,
+        category: "boardgames",
         imgs: {
-            main: ajedrez2,
+            main: powerRangersMain,
+            one: powerRangers1,
+            two: powerRangers2,
+            three: powerRangers3,
+            four: powerRangers4
+        }
+    },
+
+    backgammon: {
+        folder: "backgammon",
+        productName: "Backgammon",
+        price: 1000,
+        category: "boardgames",
+        imgs: {
+            main: backgammonMain,
+            one: backgammon1,
+            two: backgammon2,
+            three: backgammon3,
+            four: backgammon4
+        }
+    },
+
+    bolonki: {
+        folder: "bolonki",
+        productName: "Bolonki",
+        price: 10,
+        category: "boardgames",
+        imgs: {
+            main: bolonkiMain,
+            one: bolonki1,
+            two: bolonki2,
+            three: bolonki3
         }
     }
 }
