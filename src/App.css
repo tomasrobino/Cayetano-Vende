@@ -73,10 +73,23 @@
 
 .image {
   width: inherit;
-  height: inherit;
+  height: auto;
 }
 
 .productInfoDiv {
   width: inherit;
   height: 20%;
+}
+
+#singleProductPanel {
+  width: inherit;
+  height: 2000px;
+  background-color: blue;
+  display: flex;
+  align-items: flex-start;
+}
+
+#productImage {
+  width: 30%;
+  height: auto;
 }
