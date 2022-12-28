@@ -1,10 +1,14 @@
-import { SyntheticEvent, useState } from "react";
+import { useState } from "react";
 import productDatabase from "./productDatabase";
 
 function ProductPanel(props) {
     const [visible, setVisible] = useState(true);
+    const [currentProd, setCurrentProd] = useState({});
 
-    function handleClick() {
+    function handleClick(_event,product) {
+        if(visible) {
+            setCurrentProd(product);
+        }
         setVisible(!visible);
     }
 
@@ -21,7 +25,7 @@ function ProductPanel(props) {
         if (props.category==="all" || props.category===productDatabase[i].category) {  //Check for category filter
             if (productDatabase[i].price >= props.priceFilter[0] && productDatabase[i].price <= props.priceFilter[1]) { //Check for price filter
                 //Generation of component that displays each filtered product
-                divArr.push(<div className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
+                divArr.push(<div className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={event => handleClick(event, productDatabase[i])}>
                     <div className="productImageDiv">
                         <img src={productDatabase[i].imgs.main} className="image"/>
                     </div>
@@ -38,6 +42,12 @@ function ProductPanel(props) {
         return (
             <div id="productPanel">
                 {divArr}
+            </div>
+        )
+    } else {
+        return (
+            <div id="singleProductPanel">
+                <img id="productImage" src={currentProd.imgs.main}/>
             </div>
         )
     }
