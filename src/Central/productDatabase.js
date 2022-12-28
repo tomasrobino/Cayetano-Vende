@@ -1,24 +1,24 @@
-import ajedrezMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/main.jpg";
-import ajedrez1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/1.jpg";
-import ajedrez2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/2.jpg";
-import ajedrez3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/ajedrez/3.jpg";
+import ajedrezMain from "../../src/assets/prodImgs/ajedrez/main.jpg";
+import ajedrez1 from "../../src/assets/prodImgs/ajedrez/1.jpg";
+import ajedrez2 from "../../src/assets/prodImgs/ajedrez/2.jpg";
+import ajedrez3 from "../../src/assets/prodImgs/ajedrez/3.jpg";
 
-import powerRangersMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/main.jpg";
-import powerRangers1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/1.jpg";
-import powerRangers2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/2.jpg";
-import powerRangers3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/3.jpg";
-import powerRangers4 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/4 en linea power rangers/4.jpg";
+import powerRangersMain from "../../src/assets/prodImgs/4 en linea power rangers/main.jpg";
+import powerRangers1 from "../../src/assets/prodImgs/4 en linea power rangers/1.jpg";
+import powerRangers2 from "../../src/assets/prodImgs/4 en linea power rangers/2.jpg";
+import powerRangers3 from "../../src/assets/prodImgs/4 en linea power rangers/3.jpg";
+import powerRangers4 from "../../src/assets/prodImgs/4 en linea power rangers/4.jpg";
 
-import backgammonMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/main.jpg";
-import backgammon1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/1.jpg";
-import backgammon2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/2.jpg";
-import backgammon3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/3.jpg";
-import backgammon4 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/backgammon/4.jpg";
+import backgammonMain from "../../src/assets/prodImgs/backgammon/main.jpg";
+import backgammon1 from "../../src/assets/prodImgs/backgammon/1.jpg";
+import backgammon2 from "../../src/assets/prodImgs/backgammon/2.jpg";
+import backgammon3 from "../../src/assets/prodImgs/backgammon/3.jpg";
+import backgammon4 from "../../src/assets/prodImgs/backgammon/4.jpg";
 
-import bolonkiMain from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/main.jpg";
-import bolonki1 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/1.jpg";
-import bolonki2 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/2.jpg";
-import bolonki3 from "G:/Compumar/Coding/React/cayetanovende/src/assets/prodImgs/bolonki/3.jpg";
+import bolonkiMain from "../../src/assets/prodImgs/bolonki/main.jpg";
+import bolonki1 from "../../src/assets/prodImgs/bolonki/1.jpg";
+import bolonki2 from "../../src/assets/prodImgs/bolonki/2.jpg";
+import bolonki3 from "../../src/assets/prodImgs/bolonki/3.jpg";
 
 export default {
     ajedrez: {
