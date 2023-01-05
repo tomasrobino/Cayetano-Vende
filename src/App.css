@@ -45,7 +45,7 @@
   margin-right: 30px;
 }
 
-#productPanel {
+.productPanel {
   padding-left: 10px;
   padding-right: 10px;
   display: grid;
@@ -81,7 +81,7 @@
   height: 20%;
 }
 
-#singleProductPanel {
+.singleProductPanel {
   width: inherit;
   height: 2000px;
   background-color: blue;
@@ -89,7 +89,7 @@
   align-items: flex-start;
 }
 
-#productImage {
+.productImage {
   width: 30%;
   height: auto;
 }

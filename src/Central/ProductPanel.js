@@ -1,6 +1,8 @@
 import { useState } from "react";
 import productDatabase from "./productDatabase";
 
+import SingleProductPanel from "./SingleProduct/SingleProductPanel"
+
 function ProductPanel(props) {
     const [visible, setVisible] = useState(true);
     const [currentProd, setCurrentProd] = useState({});
@@ -25,31 +27,29 @@ function ProductPanel(props) {
         if (props.category==="all" || props.category===productDatabase[i].category) {  //Check for category filter
             if (productDatabase[i].price >= props.priceFilter[0] && productDatabase[i].price <= props.priceFilter[1]) { //Check for price filter
                 //Generation of component that displays each filtered product
-                divArr.push(<div className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={event => handleClick(event, productDatabase[i])}>
-                    <div className="productImageDiv">
-                        <img src={productDatabase[i].imgs.main} className="image"/>
+                divArr.push(
+                    <div className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={event => handleClick(event, productDatabase[i])}>
+                        <div className="productImageDiv">
+                            <img src={productDatabase[i].imgs.main} className="image"/>
+                        </div>
+                        <div className="productInfoDiv">
+                            <h3>{productDatabase[i].productName}</h3>
+                            <h3>${productDatabase[i].price}</h3>
+                        </div>
                     </div>
-                    <div className="productInfoDiv">
-                        <h3>{productDatabase[i].productName}</h3>
-                        <h3>${productDatabase[i].price}</h3>
-                    </div>
-                </div>);
+                );
             }
         }
     }
 
     if(visible) {
         return (
-            <div id="productPanel">
+            <div className="productPanel">
                 {divArr}
             </div>
         )
     } else {
-        return (
-            <div id="singleProductPanel">
-                <img id="productImage" src={currentProd.imgs.main}/>
-            </div>
-        )
+        return (<SingleProductPanel currentProd={currentProd}/>);
     }
 }
 
