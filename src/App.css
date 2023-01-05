@@ -83,7 +83,7 @@
 
 .singleProductPanel {
   width: inherit;
-  height: 2000px;
+  height: auto;
   background-color: blue;
   display: flex;
   align-items: flex-start;
@@ -92,4 +92,8 @@
 .productImage {
   width: 30%;
   height: auto;
+}
+
+.viewerDiv {
+
 }
