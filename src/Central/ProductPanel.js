@@ -1,7 +1,7 @@
 import { useState } from "react";
 import productDatabase from "./productDatabase";
 
-import SingleProductPanel from "./SingleProduct/SingleProductPanel"
+import SingleProductPanel from "./SingleProduct/SingleProductPanel";
 
 function ProductPanel(props) {
     const [visible, setVisible] = useState(true);
