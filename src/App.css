@@ -84,9 +84,7 @@
 .singleProductPanel {
   width: inherit;
   height: auto;
-  background-color: blue;
-  display: flex;
-  align-items: flex-start;
+  padding: 50px;
 }
 
 .productImage {
@@ -94,6 +92,6 @@
   height: auto;
 }
 
-.viewerDiv {
-
+.prodSpecsText {
+  text-align: left;
 }
