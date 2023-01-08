@@ -10,6 +10,8 @@ function FilterPanel(props) {
                 <DoubleSlider priceFilter={props.priceFilter} setPriceFilter={props.setPriceFilter}/>
             </div>
             <CategoriesFilter category={props.category} setCategory={props.setCategory}/>
+            <h4>ffdsfsd</h4>
+            <h4>frsfdgwerreerr</h4>
         </div>
     )
 }

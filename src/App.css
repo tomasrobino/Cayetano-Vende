@@ -20,19 +20,18 @@
 }
 
 #main {
+  overflow: visible;
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: fit-content;
 }
 
 #filterPanel {
+  height: inherit;
   background-color: rgb(255, 151, 5);
   width: 15%;
   min-width: 200px;
-  height: fit-content;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
 }
 
 .filterSubtitle {
@@ -46,6 +45,7 @@
 }
 
 .productPanel {
+  padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
   display: grid;
@@ -58,17 +58,19 @@
 
 
 .productDiv {
+  position: relative;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: green;
-  height: 400px;
+  height: 350px;
   width: 300px;
 }
 
 .productImageDiv {
-  width: inherit;
-  height: 80%;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: calc(100% - 20px);
 }
 
 .image {
@@ -78,7 +80,8 @@
 
 .productInfoDiv {
   width: inherit;
-  height: 20%;
+  position: absolute;
+  bottom: 10px;
 }
 
 .singleProductPanel {
