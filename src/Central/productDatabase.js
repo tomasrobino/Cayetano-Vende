@@ -20,7 +20,7 @@ import bolonki1 from "../assets/prodImgs/bolonki/1.jpg";
 import bolonki2 from "../assets/prodImgs/bolonki/2.jpg";
 import bolonki3 from "../assets/prodImgs/bolonki/3.jpg";
 
-export default {
+const database = {
     ajedrez: {
         folder: "ajedrez",
         productName: "Ajedrez",
@@ -74,4 +74,6 @@ export default {
             three: bolonki3
         }
     }
-}
+};
+
+export default database;
