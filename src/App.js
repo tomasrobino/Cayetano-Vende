@@ -1,5 +1,4 @@
 import {React, useState} from "react";
-import TextField from "@mui/material/textfield";
 
 import './App.css';
 
@@ -9,17 +8,15 @@ import Central from './Central';
 import SearchBar from './SearchBar';
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <div className="search">
-        <TextField
+    const [searchText, setSearchText] = useState("");
 
-        />
-      </div>
-      <Central/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <SearchBar setSearchText={setSearchText}/>
+            <Central searchText={searchText} />
+        </div>
+    );
 }
 
 export default App;
