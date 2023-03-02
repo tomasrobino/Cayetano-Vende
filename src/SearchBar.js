@@ -8,7 +8,7 @@ function SearchBar(props) {
 
     return (
         <div id="search">
-            <TextField label="Buscar" onChange={handleChange}/>
+            <TextField label="Buscar" onChange={handleChange} autoComplete="off"/>
         </div>
     )
 }

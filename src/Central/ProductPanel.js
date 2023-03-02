@@ -21,14 +21,16 @@ function ProductPanel(props) {
     function handleMouseLeave(event) {
         event.currentTarget.style.backgroundColor="green";
     }
-    
+
     let divArr=[];
     for(let i in productDatabase) { //Loops through all products
+        let search = props.searchText.toLowerCase();
 
-        if (props.searchText === "." || props.searchText === " " || props.searchText === "" ||
-            productDatabase[i].category.toLowerCase().includes(props.searchText.toLowerCase()) ||
-            productDatabase[i].folder.toLowerCase().includes(props.searchText.toLowerCase()) ||
-            productDatabase[i].productName.toLowerCase().includes(props.searchText.toLowerCase())
+        if (
+            search.split("").every(char => char === " ") || search === "" ||
+            search.split(" ").some(ele => productDatabase[i].category.toLowerCase().includes(ele)) ||
+            search.split(" ").some(ele => productDatabase[i].folder.toLowerCase().includes(ele)) ||
+            search.split(" ").some(ele => productDatabase[i].productName.toLowerCase().includes(ele))
         ) {
             if (props.category==="all" || props.category===productDatabase[i].category) {  //Check for category filter
                 if (productDatabase[i].price >= props.priceFilter[0] && productDatabase[i].price <= props.priceFilter[1]) { //Check for price filter
