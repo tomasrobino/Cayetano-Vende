@@ -1,3 +1,5 @@
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import { useState } from "react";
 import productDatabase from "./productDatabase";
 
@@ -36,15 +38,21 @@ function ProductPanel(props) {
                 if (productDatabase[i].price >= props.priceFilter[0] && productDatabase[i].price <= props.priceFilter[1]) { //Check for price filter
                     //Generation of component that displays each filtered product
                     divArr.push(
-                        <div className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={event => handleClick(event, productDatabase[i])}>
-                            <div className="productImageDiv">
-                                <img src={productDatabase[i].imgs.main} className="image" alt=""/>
-                            </div>
-                            <div className="productInfoDiv">
-                                <h3>{productDatabase[i].productName}</h3>
-                                <h3>${productDatabase[i].price}</h3>
-                            </div>
-                        </div>
+                        <Card sx={{ backgroundColor: "green", boxShadow: 5, borderRadius: 5 }} variant="outlined" className="productDiv" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={event => handleClick(event, productDatabase[i])}>
+                            <CardActionArea sx={{ height: "inherit", display: "flex" }}>
+                                <Box sx={{ width: "90%", height: "60%", display: "flex", alignSelf: "flex-start", borderRadius: 5, marginTop: 1.5 }}>
+                                    <CardMedia
+                                        component="img"
+                                        image={productDatabase[i].imgs.main}
+                                        sx={{borderRadius: 5, height: "fit-content", alignSelf: "center"}}
+                                    ></CardMedia>
+                                </Box>
+                                <CardContent className="productInfoDiv">
+                                    <Typography>{productDatabase[i].productName}</Typography>
+                                    <Typography>${productDatabase[i].price}</Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
                     );
                 }
             }

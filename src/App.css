@@ -66,9 +66,14 @@
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: green;
   height: 350px;
-  width: 300px;
+  width: 280px;
+}
+
+.aaa {
+  height: 80%;
+  width: 90%;
+  display: flex;
 }
 
 .productImageDiv {
@@ -83,7 +88,7 @@
 }
 
 .productInfoDiv {
-  width: inherit;
+  justify-self: center;
   position: absolute;
   bottom: 10px;
 }
