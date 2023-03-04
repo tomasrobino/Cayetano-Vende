@@ -71,9 +71,7 @@
 }
 
 .aaa {
-  height: 80%;
-  width: 90%;
-  display: flex;
+  width: calc(100%-10px);
 }
 
 .productImageDiv {

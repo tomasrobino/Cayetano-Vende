@@ -1,0 +1,20 @@
+{
+    "dataworkspace.excludedProjects": [
+        "ProductsDatabase/ProductsDatabase.sqlproj"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "localhost",
+            "username": "root",
+            "database": "products",
+            "askForPassword": true
+        }
+    ]
+}
