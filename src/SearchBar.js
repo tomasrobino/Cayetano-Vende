@@ -1,4 +1,4 @@
-import TextField from "@mui/material/textfield";
+import { TextField } from "@mui/material";
 
 function SearchBar(props) {
     function handleChange(event) {

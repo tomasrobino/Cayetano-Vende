@@ -23,7 +23,7 @@ function Viewer(props) {
 
 	return (
 		<div className="viewerDiv">
-			<img className="productImage" src={source} onClick={handleClick}/>
+			<img className="productImage" src={source} onClick={handleClick} alt=""/>
 		</div>
 	);
 }
