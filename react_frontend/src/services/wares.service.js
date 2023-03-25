@@ -10,7 +10,7 @@ class WaresDataServiceClass {
     }
 
     create(data) {
-        return http.post("/tutorials", data);
+        return http.post("/wares", data);
     }
 
     update(id, data) {
